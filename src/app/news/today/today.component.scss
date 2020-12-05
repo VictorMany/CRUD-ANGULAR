@@ -1,0 +1,60 @@
+.width100 {
+  width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+  border-radius: 1rem;
+
+}
+
+.addNotaButton {
+  margin-top: 6rem;
+}
+
+.customContainer {
+  margin-top: 6rem;
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  border-radius: 5rem;
+  border: white;
+  color: rgb(43, 122, 43);
+  background-color: rgb(226, 220, 220);
+  font-weight: bold;
+}
+
+.dateTextView {
+  color: rgb(97, 97, 97);
+  font-size: 13px;
+}
+
+.sidebar {
+  overflow-y: scroll;
+}
+
+.sidebar::-webkit-scrollbar {
+  width: 0 !important;
+}
+
+label {
+  font-size: 10px
+}
+
+.cuentaGoogle {
+  margin-top: -0.3rem;
+  margin-left: 0.4rem;
+  margin-right: 0.2rem;
+  height: 1.3rem;
+}
+
+.imgNota {
+  border-radius: 7px;
+  height: 140px;
+  width: 140px
+}
+
+.buttonBorrar {
+  margin-left: 1rem;
+}
+

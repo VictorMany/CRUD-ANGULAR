@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "salle-app-d7424": {
+      "hosting": {
+        "NewsApp": [
+          "salle-app-d7424"
+        ]
+      }
+    }
+  }
+}
