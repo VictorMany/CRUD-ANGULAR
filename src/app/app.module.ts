@@ -22,6 +22,7 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     HttpClientModule,
     // Conexión con un proyecto de firebase
     AngularFireModule.initializeApp(environment.firebaseConfig),
+    
     // Modulo de autenticación con firebase
     AngularFireAuthModule,
     // Módulo para trabajar con la base de datos

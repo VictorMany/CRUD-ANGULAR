@@ -2,9 +2,8 @@
 
   <div class="form-group formGroupCustom">
     <img [src]="img" alt="" class="imgeDefault">
-    <div style="width: 90%; height: 60px;"> 
-      <input class="btn btn-primary" type="file"
-        (change)="onChange($event)" style="width: 100%"></div>
+    <div style="width: 90%; height: 60px;">
+      <input class="btn btn-primary" type="file" (change)="onChange($event)" style="width: 100%"></div>
 
   </div>
 
@@ -20,7 +19,7 @@
 
   <div class="form-group">
     <label for="exampleInputNota">Descripción de la nota</label>
-    <textarea formControlName="description" class="form-control" id="exampleInputNota"
+    <textarea style="height:fit-content;" formControlName="description" class="form-control" id="exampleInputNota"
       placeholder="Descripcion de la noticia"></textarea>
     <div *ngIf="this.form.get('description').touched && this.form.get('description').invalid">
       <!-- hasError devuelve un valor booleano, true si tien un error y false en caso contrario  -->
