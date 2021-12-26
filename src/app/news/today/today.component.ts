@@ -27,11 +27,6 @@ export class TodayComponent implements OnInit {
     });
   }
 
-  addNota() {
-    this.router.navigate(['/news/new']);
-  }
-
-
   onUpdate(res: INews): void {
     console.log("Este deberia de ser el id de la nota", res._id)
     this.router.navigate(['/news', res._id]);
@@ -46,6 +41,9 @@ export class TodayComponent implements OnInit {
       console.log('No se pudo eliminar la noticia', error);
     }
   }
+
+
+
 }
 
 

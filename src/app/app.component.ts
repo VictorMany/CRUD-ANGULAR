@@ -13,4 +13,8 @@ export class AppComponent {
   cambio() {
     this.router.navigate(['news/today']);
   }
+
+  addNota() {
+    this.router.navigate(['/news/new']);
+  }
 }

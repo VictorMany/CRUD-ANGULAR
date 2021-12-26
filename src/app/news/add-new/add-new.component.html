@@ -1,37 +1,40 @@
-<div class="container containerCustom" [formGroup]="form">
+<div class="container-fluid containerCustom col-12 col-md-6" [formGroup]="form">
 
-   <div class="form-group formGroupCustom">
-      <img [src]="img" alt="" class="imgeDefault">
-      <input class="btn btn-primary" type="file" (change)="onChange($event)">
-   </div>
+  <div class="form-group formGroupCustom">
+    <img [src]="img" alt="" class="imgeDefault">
+    <div style="width: 90%; height: 60px;"> 
+      <input class="btn btn-primary" type="file"
+        (change)="onChange($event)" style="width: 100%"></div>
 
-   <div class="form-group">
-      <label for="exampleInputName">Nombre de la nota</label>
-      <input formControlName="name" class="form-control" placeholder="Ingresa el nombre de la noticia"
-         id="exampleInputName">
-      <div *ngIf="this.form.get('name').touched && this.form.get('name').invalid">
-         <!-- hasError devuelve un valor booleano, true si tien un error y false en caso contrario  -->
-         <small *ngIf="this.form.get('name').getError('required')"> El campo nombre es requerido </small>
-      </div>
-   </div>
+  </div>
 
-   <div class="form-group">
-      <label for="exampleInputNota">Descripcion de la nota</label>
-      <textarea formControlName="description" class="form-control" id="exampleInputNota"
-         placeholder="Descripcion de la noticia"></textarea>
-      <div *ngIf="this.form.get('description').touched && this.form.get('description').invalid">
-         <!-- hasError devuelve un valor booleano, true si tien un error y false en caso contrario  -->
-         <small *ngIf="this.form.get('description').getError('required')"> El campo nombre es requerido </small>
-      </div>
-   </div>
+  <div class="form-group">
+    <label for="exampleInputName">Nombre de la nota</label>
+    <input formControlName="name" class="form-control" placeholder="Ingresa el nombre de la noticia"
+      id="exampleInputName">
+    <div *ngIf="this.form.get('name').touched && this.form.get('name').invalid">
+      <!-- hasError devuelve un valor booleano, true si tien un error y false en caso contrario  -->
+      <small *ngIf="this.form.get('name').getError('required')"> El campo nombre es requerido </small>
+    </div>
+  </div>
 
-   <button *ngIf="this.isNew; else newUpdate;" (click)="onAdd()" type="submit" class="btn btn-primary"> Agregar
-   </button>
+  <div class="form-group">
+    <label for="exampleInputNota">Descripción de la nota</label>
+    <textarea formControlName="description" class="form-control" id="exampleInputNota"
+      placeholder="Descripcion de la noticia"></textarea>
+    <div *ngIf="this.form.get('description').touched && this.form.get('description').invalid">
+      <!-- hasError devuelve un valor booleano, true si tien un error y false en caso contrario  -->
+      <small *ngIf="this.form.get('description').getError('required')"> El campo nombre es requerido </small>
+    </div>
+  </div>
 
-   <button (click)="GoHome()"  type="submit" class="btn btn-primary goHomeButton"> Ir a noticias
-   </button>
+  <button *ngIf="this.isNew; else newUpdate;" (click)="onAdd()" type="submit" class="btn btn-primary btn"> Agregar
+  </button>
 
-   <ng-template #newUpdate>
-      <button (click)="onUpdate()" type="submit" class="btn btn-primary"> Actualizar </button>
-   </ng-template>
+  <button (click)="GoHome()" type="submit" class="btn btn-primary goHomeButton"> Ir a noticias
+  </button>
+
+  <ng-template #newUpdate>
+    <button (click)="onUpdate()" type="submit" class="btn btn-primary"> Actualizar </button>
+  </ng-template>
 </div>

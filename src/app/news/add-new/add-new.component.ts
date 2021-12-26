@@ -17,7 +17,7 @@ export class AddNewComponent implements OnInit {
   // Params
   params: Params;
   // Profile image
-  img = 'https://firebasestorage.googleapis.com/v0/b/salle-app-592bb.appspot.com/o/pngfind.com-marshmello-png-2193391.png?alt=media&token=23b5177a-b6af-40f6-b6cb-9a613c2c518c';
+  img = '../../../assets/notfound.png';
   file: File;
   meses = new Array("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre");
   f = new Date();
