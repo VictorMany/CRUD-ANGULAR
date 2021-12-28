@@ -17,4 +17,8 @@ export class AppComponent {
   addNota() {
     this.router.navigate(['/news/new']);
   }
+
+  home() {
+    this.router.navigate(['/news']);
+  }
 }
